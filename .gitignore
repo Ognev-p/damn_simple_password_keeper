@@ -1,0 +1,6 @@
+# Build paths
+obj
+bin
+
+# Test DB file
+testDB
