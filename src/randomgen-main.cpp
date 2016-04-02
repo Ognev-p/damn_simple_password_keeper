@@ -35,14 +35,15 @@ typedef std::string (*RandomFn)(int);
 
 static void help( const char *programName )
 {
-    printf( "Usage: %s [filename] <number> <nicknames/PINs/passwords/bytes> [length]\n"
+    printf( "Usage: %s <number> <\"nicknames\"/\"PINs\"/\"passwords\"/\"bytes\"> [length]\n"
             "\tProgram will output <number> of following entities:\n"
             "\t\tnicknames: random-generated words of [length(default = 2-5)] syllables\n"
             "\t\tPINs: PIN-codes of [length(default = 4)] digits\n"
             "\t\tpasswords: random string of [length(default = 12)] chars from 64 possible\n"
             "\t\tbytes: HEX presentation of [length(default = 16)] random bytes\n"
-            "\tLength can be specified as a single decimal or a range, e.g. \"5-10\"\n\n",
-            programName );
+            "\tLength can be specified as a single decimal or a range, e.g. \"5-10\"\n\n"
+            "\tExample:\n\t\t%s 16 passwords 11\n\n",
+            programName, programName );
 }
 
 
