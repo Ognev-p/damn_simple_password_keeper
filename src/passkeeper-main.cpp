@@ -261,6 +261,12 @@ int main( int argc, char **argv )
         window.setGeometry( screen.width() / 6, screen.height() / 6,
                             screen.width() * 2 / 3, screen.height() * 2 / 3 );
 
+#ifdef Q_WS_X11
+        // Set X11 flags to let it choose correct screen and center the window
+        window.setAttribute(Qt::WA_Moved, false);
+        window.setAttribute(Qt::WA_X11NetWmWindowTypeDialog, true);
+#endif
+
         window.show();
 
         return app.exec();
