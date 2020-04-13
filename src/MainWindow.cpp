@@ -73,6 +73,7 @@ MainWindow::MainWindow( const QString &title, StorageEngine *storage )
 , curPassRandMode( DEFAULT_PASSWORD_TYPE )
 {
     setWindowTitle( title );
+    setWindowIcon(QIcon(WINDOW_ICON_PATH));
 
     QWidget *centralWidget = new QWidget();
     QVBoxLayout *mainLayout = new QVBoxLayout( centralWidget );

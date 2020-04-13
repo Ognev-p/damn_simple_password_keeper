@@ -31,6 +31,8 @@
 #include <QtGui/QTableWidget>
 #include <QtGui/QDialogButtonBox>
 
+#define WINDOW_ICON_PATH "/home/crypton/progs/ds_passkeeper.svg"
+
 class StorageEngine;
 
 

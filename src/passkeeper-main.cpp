@@ -94,6 +94,7 @@ static bool passwordDialog( QString *dst, const QString &labelText )
 {
     QInputDialog dialog;
     dialog.setLabelText( labelText );
+    dialog.setWindowIcon(QIcon(WINDOW_ICON_PATH));
     dialog.setInputMode( QInputDialog::TextInput );
     dialog.setTextEchoMode( QLineEdit::Password );
 
